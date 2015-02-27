@@ -3,10 +3,36 @@
 
     <string name="app_name">Broncomania</string>
     <string name="home_title">Jaime Rodriguez &quot;El Bronco&quot;</string>
-    <string name="home_phrase">phrase</string>
-    <string name="home_description_title">desc title</string>
-    <string name="home_description_body">body</string>
-    <string name="calendar_title">Apoyanos de corazon con la campaña 100% transparente</string>
-    <string name="donate_title">¡Deseo apoyar!</string>
+    <string name="home_phrase">JUNTOS TÚ Y YO VAMOS A LOGRAR LO QUE NUEVO LEÓN NECESITA</string>
+    <string name="home_description_title">¡Vamos a entrarle con todo!</string>
+    <string name="home_description_body">Estamos haciendo historia, no podrán detener a estos broncos que queremos un Nuevo León con más oportunidades, más seguro y fuerte</string>
+    <string name="donate_title">APÓYANOS CON LA CAMPAÑA 100% TRANSPARENTE</string>
+    <string name="donate_days">Días restantes</string>
+    <string name="donatation_title">¡Deseo apoyar!</string>
+    <string name="donate_donation">APOYAR</string>
+    <string name="donate_transparency">TRANSPARENCIA</string>
+    <string name="events_title_1"> Febrero 15 - Todo el día</string>
+    <string name="events_title_2"> Febrero 21 - 1:00pm</string>
+    <string name="events_title_3"> Febrero 22 - 10:30am</string>
+    <string name="events_title_4"> Febrero 28 - 2:00pm</string>
+    <string name="events_title_5"> Marzo 1 - 10:30am</string>
+    <string name="events_title_6"> Marzo 7 - 1:00pm</string>
+    <string name="events_title_7"> Marzo 8 - Todo el día</string>
+    
+    <string name="events_description_1"> Entrega de formatos en Av. Raúl Rangel Frías</string>
+    <string name="events_description_2"> Reunión con voluntiarados en Casa Real</string>
+    <string name="events_description_3"> Cabalgata bronco en Entrada Parque</string>
+    <string name="events_description_4"> Reunion con voluntariados en Convex</string>
+    <string name="events_description_5"> Activación Broncomanía en Macroplaza</string>
+    <string name="events_description_6"> Reunión con Voluntariado en Salón La Diana</string>
+    <string name="events_description_7"> </string>
+    
+    <string name="events_location_1"> #114 Col. Burócratas del Estado</string>
+    <string name="events_location_2"> "Planta Baja" Morones Prieto #2300 </string>
+    <string name="events_location_3"> "La Huasteca" Santa Catarina N.L.</string>
+    <string name="events_location_4"> 16 de Septiembre 1511, Nuevas Colonias</string>
+    <string name="events_location_5"> Zona centro Monterrey</string>
+    <string name="events_location_6"> Guadalupe No. 208 Pte. Centro, Guadalupe, N.L.</string>
+    <string name="events_location_7"> </string>
 
 </resources>

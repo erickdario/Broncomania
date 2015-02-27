@@ -16,5 +16,26 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
+    
+    <color name="blue_buttons"> #6591c6 </color>
+    
+    <color name="blue_letters"> #1065c2 </color>
+    
+    <color name="blue_home"> #5597ce </color>
+    
+    <color name="white_buttons"> #ffffff </color>
+    
+    <color name="green_background"> #78a23c </color>
+    
+    <color name="gray_background"> #232323 </color>
+    
+    <color name="dark_gray_event"> #636363 </color>
+    
+    <color name="light_gray_event"> #e5e5e5 </color>
+    
+    <color name="dark_purple_event"> #483764 </color>
+    
+    <color name="light_purple_event"> #e0dae7 </color>
+    
 
 </resources>

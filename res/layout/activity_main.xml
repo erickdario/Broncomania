@@ -12,8 +12,109 @@
 	</android.support.v4.view.ViewPager>
 
     <TextView
+        android:id="@+id/home_title"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white_buttons"
+        android:background="@color/gray_background"
+        android:text="@string/home_title" />
+
+    <ImageView
+        android:id="@+id/home_main_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_title"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+        android:src="@drawable/jaime_home" />
+    
+    <TextView
+        android:id="@+id/home_phrase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_below="@id/home_main_image"
+        android:layout_centerHorizontal="true"
+        android:background="@color/blue_home"
+        android:gravity="center"
+        android:text="@string/home_phrase"
+        android:textColor="@color/white_buttons" />
+
+    <ImageView
+        android:id="@+id/image_bus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/home_title" />
+        android:layout_below="@+id/home_phrase"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="30dp"
+        android:layout_marginEnd="30dp"
+        android:src="@drawable/bus" />
+
+    <ImageView
+        android:id="@+id/image_savings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/image_bus"
+        android:layout_toEndOf="@+id/image_bus"
+        android:adjustViewBounds="true"
+        android:maxWidth="30dp"
+        android:layout_marginEnd="30dp"
+        android:src="@drawable/savings" />
+    
+    <ImageView
+        android:id="@+id/image_portfolio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/image_bus"
+        android:layout_toEndOf="@+id/image_savings"
+        android:adjustViewBounds="true"
+        android:maxWidth="30dp"
+        android:layout_marginEnd="30dp"
+        android:src="@drawable/portfolio" />
+    
+    <ImageView
+        android:id="@+id/image_rules"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/image_bus"
+        android:layout_toEndOf="@+id/image_portfolio"
+        android:adjustViewBounds="true"
+        android:maxWidth="30dp"
+        android:layout_marginEnd="30dp"
+        android:src="@drawable/rules" />
+    
+    <ImageView
+        android:id="@+id/image_cop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/image_bus"
+        android:layout_toEndOf="@+id/image_rules"
+        android:adjustViewBounds="true"
+        android:maxWidth="30dp"
+        android:src="@drawable/cop" />
+    
+    <TextView
+        android:id="@+id/home_description_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_bus"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/home_description_title"
+        android:textSize="20dp" />
+    
+    <TextView
+        android:id="@+id/home_description_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/home_description_title"
+        android:layout_centerHorizontal="true"
+        android:text="@string/home_description_body" />
 
 </RelativeLayout>
