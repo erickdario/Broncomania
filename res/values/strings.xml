@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Broncomania</string>
+    <string name="home_title">Jaime Rodriguez &quot;El Bronco&quot;</string>
+    <string name="home_phrase">phrase</string>
+    <string name="home_description_title">desc title</string>
+    <string name="home_description_body">body</string>
+    <string name="calendar_title">Apoyanos de corazon con la campaña 100% transparente</string>
+    <string name="donate_title">¡Deseo apoyar!</string>
+
+</resources>
