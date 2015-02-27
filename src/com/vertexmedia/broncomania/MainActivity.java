@@ -50,6 +50,13 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         
+        final int[] ICONS = new int[] {
+                R.drawable.home,
+                R.drawable.money,
+                R.drawable.calendar
+        };
+
+        
         //Remove title bar
         //this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         
@@ -89,7 +96,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
             // Also specify this Activity object, which implements the TabListener interface, as the
             // listener for when this tab is selected.
             actionBar.addTab(
-                    actionBar.newTab()
+                    actionBar.newTab().setIcon(ICONS[i])
                             .setText(mAppSectionsPagerAdapter.getPageTitle(i))
                             .setTabListener(this));
         }
@@ -166,7 +173,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.activity_main, container, false);
+            View rootView = inflater.inflate(R.layout.fragment_home, container, false);
 
             return rootView;
         }

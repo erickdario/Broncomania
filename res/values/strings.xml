@@ -11,6 +11,10 @@
     <string name="donatation_title">¡Deseo apoyar!</string>
     <string name="donate_donation">APOYAR</string>
     <string name="donate_transparency">TRANSPARENCIA</string>
+    
+    <string name="count_down_image_description"> count_down_image_description</string>
+    <string name="donate_background_image_description"> donate_background_image_description</string>
+    
     <string name="events_title_1"> Febrero 15 - Todo el día</string>
     <string name="events_title_2"> Febrero 21 - 1:00pm</string>
     <string name="events_title_3"> Febrero 22 - 10:30am</string>
