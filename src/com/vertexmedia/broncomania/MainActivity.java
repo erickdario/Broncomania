@@ -29,6 +29,7 @@ import android.annotation.SuppressLint;
 import android.app.ActionBar;
 import android.app.FragmentTransaction;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -39,9 +40,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends FragmentActivity implements ActionBar.TabListener {
 
@@ -296,10 +295,17 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
     			long minutes = seconds / 60;
     			long hours = minutes / 60;
     			long days = hours / 24;
-    			tv1 = (TextView) rootView.findViewById(R.id.coutdown_days_text);
-    			//TextView myAwesomeTextView = (TextView)findViewById(R.id.myAwesomeTextView);
-    			//Long.toString(days)
-    	        tv1.setText(Long.toString(days));
+    			tv1 = (TextView) rootView.findViewById(R.id.coutdown_days_text_thousands);
+    			tv1.setText("0");
+    			
+    			tv1 = (TextView) rootView.findViewById(R.id.coutdown_days_text_hundreds);
+    			tv1.setText("0");
+    			
+    			tv1 = (TextView) rootView.findViewById(R.id.coutdown_days_text_tens);
+    	        tv1.setText(Long.toString(days / 10));
+    	        
+    	        tv1 = (TextView) rootView.findViewById(R.id.coutdown_days_text_units);
+    	        tv1.setText(Long.toString(days % 10));
     		} catch (ParseException e) {
     			// TODO Auto-generated catch block
     			e.printStackTrace();
@@ -324,18 +330,17 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
         }
     }
     
-
-    
     public void onClickFunc(View view) {
     	
-    	String pageNumber = (String) view.getTag(); 
+    	String candidate = (String) view.getTag(); 
+    	String captionEnding = ", ahora te toca a tí";
     	
     	if (FacebookDialog.canPresentShareDialog(getApplicationContext(), 
                 FacebookDialog.ShareDialogFeature.SHARE_DIALOG)) {
 
 	    	FacebookDialog shareDialog = new FacebookDialog.ShareDialogBuilder(this)
 	    			.setApplicationName("Broncomania")
-	    			.setCaption("Yo ya ayudé, ahora te toca a tí")
+	    			.setCaption("Yo ya ayudé a ".concat(candidate).concat(captionEnding))
 	    			.setName("Apoya a la Broncomania")
 	    			.setLink("bit.ly/SumatePorNL")
 			        .setDescription("Ayuda a Nuevo León")	
@@ -343,5 +348,10 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 	    	uiHelper.trackPendingDialogCall(shareDialog.present());
     	} else {
     	}
+    }
+    
+    public void openBroncoWebsite(View view){
+    	Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://unete.jaimerodriguez.mx/register"));
+    	startActivity(browserIntent);
     }
 }

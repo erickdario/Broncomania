@@ -57,9 +57,41 @@
     <string name="candidates_section_2_person_location_3"> Apodaca </string>
     <string name="candidates_section_2_person_name_4"> Efrein García </string>
     <string name="candidates_section_2_person_location_4"> Santa Catarina </string>
+    <string name="candidates_section_2_person_name_5"> Lorenia Canavati </string>
+    <string name="candidates_section_2_person_location_5"> San Pedro </string>
+    <string name="candidates_section_2_person_name_6"> César Adrián Valdés </string>
+    <string name="candidates_section_2_person_location_6"> García </string>
+    <string name="candidates_section_2_person_name_7"> Juan Ignacio Cantú </string>
+    <string name="candidates_section_2_person_location_7"> Montemorelos </string>
+    <string name="candidates_section_2_person_name_8"> Alfonso Jiménez </string>
+    <string name="candidates_section_2_person_location_8"> Santiago </string>
+    <string name="candidates_section_2_person_name_9"> Miguel González </string>
+    <string name="candidates_section_2_person_location_9"> El Carmen </string>
+    <string name="candidates_section_2_person_name_10"> Luis Pardo </string>
+    <string name="candidates_section_2_person_location_10"> Hualahuises </string>
     
-    <string name="candidates_section_3_person_name_1"> Jose Eduardo Santos </string>
+    <string name="candidates_section_3_person_name_1"> José Eduardo Santos </string>
     <string name="candidates_section_3_person_location_1"> Distrito 8 </string>
+    <string name="candidates_section_3_person_name_2"> Olga Valentina Treviño </string>
+    <string name="candidates_section_3_person_location_2"> Distrito 9 </string>
+    <string name="candidates_section_3_person_name_3"> Antonio González </string>
+    <string name="candidates_section_3_person_location_3"> Distrito 13 </string>
+    <string name="candidates_section_3_person_name_4"> Martha Montes Salazar </string>
+    <string name="candidates_section_3_person_location_4"> Distrito 14 </string>
+    <string name="candidates_section_3_person_name_5"> Antonio Román Pereyra </string>
+    <string name="candidates_section_3_person_location_5"> Distrito 15 </string>
+    <string name="candidates_section_3_person_name_6"> José González </string>
+    <string name="candidates_section_3_person_location_6"> Distrito 16 </string>
+    <string name="candidates_section_3_person_name_7"> José Antonio Sánchez </string>
+    <string name="candidates_section_3_person_location_7"> Distrito 17 </string>
+    <string name="candidates_section_3_person_name_8"> Tatiana Clouthier  </string>
+    <string name="candidates_section_3_person_location_8"> Distrito 18 </string>
+    <string name="candidates_section_3_person_name_9"> Eva Trujillo Ramírez </string>
+    <string name="candidates_section_3_person_location_9"> Distrito 19 </string>
+    <string name="candidates_section_3_person_name_10"> Luis Guevara Garza </string>
+    <string name="candidates_section_3_person_location_10"> Distrito 20 </string>
+    <string name="candidates_section_3_person_name_11"> José Luis Rodela </string>
+    <string name="candidates_section_3_person_location_11"> Distrito 21 </string>
     
 
 </resources>

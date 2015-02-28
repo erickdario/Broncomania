@@ -1,5 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" 
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
     
@@ -125,16 +126,25 @@
         android:layout_centerHorizontal="true"
         android:text="@string/home_description_body" />
     
+    <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/home_footer"
+    
+    android:layout_below="@id/home_description_body" >
+
     <Button
         android:id="@+id/button_donation"
         style="@style/AppBaseTheme"
         android:layout_width="150dp"
         android:layout_height="35dp"
-        android:layout_below="@+id/home_description_body"
-        android:layout_centerHorizontal="true"
         android:background="@drawable/green_button"
         android:text="@string/home_join_button"
+        android:layout_gravity="center"
+        android:onClick="openBroncoWebsite"
         android:textColor="@drawable/button_white_text" />
+    
+    </FrameLayout>
 
     <LinearLayout
         android:id="@+id/home_footer"

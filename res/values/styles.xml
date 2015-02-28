@@ -52,7 +52,11 @@
     
     <color name="light_purple_event"> #e0dae7 </color>
     
-    <color name="orange_candidate"> #e28e24 </color>
+    <color name="purple_candidate"> #8d22e0 </color>
+    
+    <color name="white_20_alpha"> #33ffffff </color>
+    
+    <color name="white_50_alpha"> #7cffffff </color>
     
 
 </resources>

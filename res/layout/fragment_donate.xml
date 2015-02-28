@@ -23,13 +23,14 @@
 
     <ImageView
         android:id="@+id/count_down"
-        android:layout_width="265dp"
+        android:layout_width="256dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/donate_title"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
         android:adjustViewBounds="true"
         android:contentDescription="@string/count_down_image_description"
+        android:cropToPadding="true"
         android:src="@drawable/count_down" />
 
     <TextView
@@ -86,16 +87,52 @@
         android:textStyle="bold"
         android:textColor="@color/white_buttons"
         android:textSize="20sp" />
-
+    
     <TextView
-        android:id="@+id/coutdown_days_text"
+        android:id="@+id/coutdown_days_text_hundreds"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/coutdown_days_text_thousands"
         android:layout_below="@+id/donate_title"
         android:layout_centerInParent="true"
         android:gravity="center|top"
         android:textStyle="bold"
         android:textColor="@color/blue_letters"
-        android:textSize="100sp" />
+        android:textSize="90sp" />
+    
+    <TextView
+        android:id="@+id/coutdown_days_text_tens"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/coutdown_days_text_hundreds"
+        android:layout_below="@+id/donate_title"
+        android:layout_centerInParent="true"
+        android:gravity="center|top"
+        android:textStyle="bold"
+        android:textColor="@color/blue_letters"
+        android:textSize="90sp" />
+    
+    <TextView
+        android:id="@+id/coutdown_days_text_units"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/coutdown_days_text_tens"
+        android:layout_below="@+id/donate_title"
+        android:layout_centerInParent="true"
+        android:gravity="center|top"
+        android:textStyle="bold"
+        android:textColor="@color/blue_letters"
+        android:textSize="90sp" />
+
+    <TextView
+        android:id="@+id/coutdown_days_text_thousands"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/donate_title"
+        android:layout_toStartOf="@+id/count_down"
+        android:gravity="center|top"
+        android:textColor="@color/blue_letters"
+        android:textSize="90sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>

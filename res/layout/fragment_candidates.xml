@@ -28,7 +28,7 @@
 		    android:layout_width="match_parent"
 		    android:layout_height="wrap_content"
 		    android:orientation="vertical"
-		    android:background="@color/orange_candidate" >
+		    android:background="@color/purple_candidate" >
 
 		    <TextView
 		        android:id="@+id/candidates_section_1"
@@ -100,7 +100,7 @@
 		    android:layout_width="match_parent"
 		    android:layout_height="wrap_content"
 		    android:orientation="vertical"
-		    android:background="@color/orange_candidate" >
+		    android:background="@color/purple_candidate" >
 
 		    <TextView
 		        android:id="@+id/candidates_section_2"
@@ -314,12 +314,306 @@
 
 	    </RelativeLayout>
 	    
+	    <RelativeLayout 
+	        android:id="@+id/section_2_body_5"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:background="@drawable/black_border_frame" >
+
+		    <TextView
+		        android:id="@+id/candidates_section_2_person_location_5"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginStart="20dp"
+		        android:layout_marginTop="8dp"
+		        android:background="@android:color/transparent"
+		        android:text="@string/candidates_section_2_person_location_5"
+		        android:textAlignment="center"
+		        android:textColor="@android:color/black"
+		        android:textSize="16sp"
+		        android:textStyle="bold" />
+		    
+		    <TextView
+		        android:id="@+id/candidates_section_2_person_name_5"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/candidates_section_2_person_location_5"
+		        android:layout_marginBottom="8dp"
+		        android:layout_marginStart="20dp"
+		        android:background="@android:color/transparent"
+		        android:paddingBottom="8dp"
+		        android:text="@string/candidates_section_2_person_name_5"
+		        android:textAlignment="center"
+		        android:textColor="@android:color/black"
+		        android:textSize="16sp" />
+		    
+		    <Button
+		        android:id="@+id/plusone_6"
+		        android:layout_width="40dp"
+		        android:layout_height="36dp"
+		        android:layout_alignParentEnd="true"
+		        android:layout_centerVertical="true"
+		        android:layout_marginEnd="20dp"
+		        android:adjustViewBounds="true"
+		        android:background="@drawable/plus_button"
+		        android:onClick="onClickFunc"
+		        android:tag="6"
+		        android:scaleType="centerCrop" />
+
+	    </RelativeLayout>
+	    
+	    <RelativeLayout 
+	        android:id="@+id/section_2_body_6"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:background="@drawable/black_border_frame" >
+
+		    <TextView
+		        android:id="@+id/candidates_section_2_person_location_6"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginStart="20dp"
+		        android:layout_marginTop="8dp"
+		        android:background="@android:color/transparent"
+		        android:text="@string/candidates_section_2_person_location_6"
+		        android:textAlignment="center"
+		        android:textColor="@android:color/black"
+		        android:textSize="16sp"
+		        android:textStyle="bold" />
+		    
+		    <TextView
+		        android:id="@+id/candidates_section_2_person_name_6"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/candidates_section_2_person_location_6"
+		        android:layout_marginBottom="8dp"
+		        android:layout_marginStart="20dp"
+		        android:background="@android:color/transparent"
+		        android:paddingBottom="8dp"
+		        android:text="@string/candidates_section_2_person_name_6"
+		        android:textAlignment="center"
+		        android:textColor="@android:color/black"
+		        android:textSize="16sp" />
+		    
+		    <Button
+		        android:id="@+id/plusone_7"
+		        android:layout_width="40dp"
+		        android:layout_height="36dp"
+		        android:layout_alignParentEnd="true"
+		        android:layout_centerVertical="true"
+		        android:layout_marginEnd="20dp"
+		        android:adjustViewBounds="true"
+		        android:background="@drawable/plus_button"
+		        android:onClick="onClickFunc"
+		        android:tag="7"
+		        android:scaleType="centerCrop" />
+
+	    </RelativeLayout>
+	    
+	    <RelativeLayout 
+	        android:id="@+id/section_2_body_7"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:background="@drawable/black_border_frame" >
+
+		    <TextView
+		        android:id="@+id/candidates_section_2_person_location_7"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginStart="20dp"
+		        android:layout_marginTop="8dp"
+		        android:background="@android:color/transparent"
+		        android:text="@string/candidates_section_2_person_location_7"
+		        android:textAlignment="center"
+		        android:textColor="@android:color/black"
+		        android:textSize="16sp"
+		        android:textStyle="bold" />
+		    
+		    <TextView
+		        android:id="@+id/candidates_section_2_person_name_7"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/candidates_section_2_person_location_7"
+		        android:layout_marginBottom="8dp"
+		        android:layout_marginStart="20dp"
+		        android:background="@android:color/transparent"
+		        android:paddingBottom="8dp"
+		        android:text="@string/candidates_section_2_person_name_7"
+		        android:textAlignment="center"
+		        android:textColor="@android:color/black"
+		        android:textSize="16sp" />
+		    
+		    <Button
+		        android:id="@+id/plusone_8"
+		        android:layout_width="40dp"
+		        android:layout_height="36dp"
+		        android:layout_alignParentEnd="true"
+		        android:layout_centerVertical="true"
+		        android:layout_marginEnd="20dp"
+		        android:adjustViewBounds="true"
+		        android:background="@drawable/plus_button"
+		        android:onClick="onClickFunc"
+		        android:tag="8"
+		        android:scaleType="centerCrop" />
+
+	    </RelativeLayout>
+	    
+	    <RelativeLayout 
+	        android:id="@+id/section_2_body_8"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:background="@drawable/black_border_frame" >
+
+		    <TextView
+		        android:id="@+id/candidates_section_2_person_location_8"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginStart="20dp"
+		        android:layout_marginTop="8dp"
+		        android:background="@android:color/transparent"
+		        android:text="@string/candidates_section_2_person_location_8"
+		        android:textAlignment="center"
+		        android:textColor="@android:color/black"
+		        android:textSize="16sp"
+		        android:textStyle="bold" />
+		    
+		    <TextView
+		        android:id="@+id/candidates_section_2_person_name_8"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/candidates_section_2_person_location_8"
+		        android:layout_marginBottom="8dp"
+		        android:layout_marginStart="20dp"
+		        android:background="@android:color/transparent"
+		        android:paddingBottom="8dp"
+		        android:text="@string/candidates_section_2_person_name_8"
+		        android:textAlignment="center"
+		        android:textColor="@android:color/black"
+		        android:textSize="16sp" />
+		    
+		    <Button
+		        android:id="@+id/plusone_9"
+		        android:layout_width="40dp"
+		        android:layout_height="36dp"
+		        android:layout_alignParentEnd="true"
+		        android:layout_centerVertical="true"
+		        android:layout_marginEnd="20dp"
+		        android:adjustViewBounds="true"
+		        android:background="@drawable/plus_button"
+		        android:onClick="onClickFunc"
+		        android:tag="9"
+		        android:scaleType="centerCrop" />
+
+	    </RelativeLayout>
+	    
+	    <RelativeLayout 
+	        android:id="@+id/section_2_body_9"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:background="@drawable/black_border_frame" >
+
+		    <TextView
+		        android:id="@+id/candidates_section_2_person_location_9"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginStart="20dp"
+		        android:layout_marginTop="8dp"
+		        android:background="@android:color/transparent"
+		        android:text="@string/candidates_section_2_person_location_9"
+		        android:textAlignment="center"
+		        android:textColor="@android:color/black"
+		        android:textSize="16sp"
+		        android:textStyle="bold" />
+		    
+		    <TextView
+		        android:id="@+id/candidates_section_2_person_name_9"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/candidates_section_2_person_location_9"
+		        android:layout_marginBottom="8dp"
+		        android:layout_marginStart="20dp"
+		        android:background="@android:color/transparent"
+		        android:paddingBottom="8dp"
+		        android:text="@string/candidates_section_2_person_name_9"
+		        android:textAlignment="center"
+		        android:textColor="@android:color/black"
+		        android:textSize="16sp" />
+		    
+		    <Button
+		        android:id="@+id/plusone_10"
+		        android:layout_width="40dp"
+		        android:layout_height="36dp"
+		        android:layout_alignParentEnd="true"
+		        android:layout_centerVertical="true"
+		        android:layout_marginEnd="20dp"
+		        android:adjustViewBounds="true"
+		        android:background="@drawable/plus_button"
+		        android:onClick="onClickFunc"
+		        android:tag="5"
+		        android:scaleType="centerCrop" />
+
+	    </RelativeLayout>
+	    
+	    <RelativeLayout 
+	        android:id="@+id/section_2_body_10"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:background="@drawable/black_border_frame" >
+
+		    <TextView
+		        android:id="@+id/candidates_section_2_person_location_10"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginStart="20dp"
+		        android:layout_marginTop="8dp"
+		        android:background="@android:color/transparent"
+		        android:text="@string/candidates_section_2_person_location_10"
+		        android:textAlignment="center"
+		        android:textColor="@android:color/black"
+		        android:textSize="16sp"
+		        android:textStyle="bold" />
+		    
+		    <TextView
+		        android:id="@+id/candidates_section_2_person_name_10"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/candidates_section_2_person_location_10"
+		        android:layout_marginBottom="8dp"
+		        android:layout_marginStart="20dp"
+		        android:background="@android:color/transparent"
+		        android:paddingBottom="8dp"
+		        android:text="@string/candidates_section_2_person_name_10"
+		        android:textAlignment="center"
+		        android:textColor="@android:color/black"
+		        android:textSize="16sp" />
+		    
+		    <Button
+		        android:id="@+id/plusone_11"
+		        android:layout_width="40dp"
+		        android:layout_height="36dp"
+		        android:layout_alignParentEnd="true"
+		        android:layout_centerVertical="true"
+		        android:layout_marginEnd="20dp"
+		        android:adjustViewBounds="true"
+		        android:background="@drawable/plus_button"
+		        android:onClick="onClickFunc"
+		        android:tag="11"
+		        android:scaleType="centerCrop" />
+
+	    </RelativeLayout>
+	    
 	    <LinearLayout 
 	        android:id="@+id/section_3"
 		    android:layout_width="match_parent"
 		    android:layout_height="wrap_content"
 		    android:orientation="vertical"
-		    android:background="@color/orange_candidate" >
+		    android:background="@color/purple_candidate" >
 
 		    <TextView
 		        android:id="@+id/candidates_section_3"
@@ -372,7 +666,7 @@
 		        android:textSize="16sp" />
 		    
 		    <Button
-		        android:id="@+id/plusone_6"
+		        android:id="@+id/plusone_12"
 		        android:layout_width="40dp"
 		        android:layout_height="36dp"
 		        android:layout_alignParentEnd="true"
@@ -381,7 +675,497 @@
 		        android:adjustViewBounds="true"
 		        android:background="@drawable/plus_button"
 		        android:onClick="onClickFunc"
-		        android:tag="6"
+		        android:tag="12"
+		        android:scaleType="centerCrop" />
+
+	    </RelativeLayout>
+	    
+	    <RelativeLayout 
+	        android:id="@+id/section_3_body_2"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:background="@drawable/black_border_frame" >
+
+		    <TextView
+		        android:id="@+id/candidates_section_3_person_location_2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginStart="20dp"
+		        android:layout_marginTop="8dp"
+		        android:background="@android:color/transparent"
+		        android:text="@string/candidates_section_3_person_location_2"
+		        android:textAlignment="center"
+		        android:textColor="@android:color/black"
+		        android:textSize="16sp"
+		        android:textStyle="bold" />
+		    
+		    <TextView
+		        android:id="@+id/candidates_section_3_person_name_2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/candidates_section_3_person_location_2"
+		        android:layout_marginBottom="8dp"
+		        android:layout_marginStart="20dp"
+		        android:background="@android:color/transparent"
+		        android:paddingBottom="8dp"
+		        android:text="@string/candidates_section_3_person_name_2"
+		        android:textAlignment="center"
+		        android:textColor="@android:color/black"
+		        android:textSize="16sp" />
+		    
+		    <Button
+		        android:id="@+id/plusone_13"
+		        android:layout_width="40dp"
+		        android:layout_height="36dp"
+		        android:layout_alignParentEnd="true"
+		        android:layout_centerVertical="true"
+		        android:layout_marginEnd="20dp"
+		        android:adjustViewBounds="true"
+		        android:background="@drawable/plus_button"
+		        android:onClick="onClickFunc"
+		        android:tag="13"
+		        android:scaleType="centerCrop" />
+
+	    </RelativeLayout>
+	    
+	    <RelativeLayout 
+	        android:id="@+id/section_3_body_3"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:background="@drawable/black_border_frame" >
+
+		    <TextView
+		        android:id="@+id/candidates_section_3_person_location_3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginStart="20dp"
+		        android:layout_marginTop="8dp"
+		        android:background="@android:color/transparent"
+		        android:text="@string/candidates_section_3_person_location_3"
+		        android:textAlignment="center"
+		        android:textColor="@android:color/black"
+		        android:textSize="16sp"
+		        android:textStyle="bold" />
+		    
+		    <TextView
+		        android:id="@+id/candidates_section_3_person_name_3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/candidates_section_3_person_location_3"
+		        android:layout_marginBottom="8dp"
+		        android:layout_marginStart="20dp"
+		        android:background="@android:color/transparent"
+		        android:paddingBottom="8dp"
+		        android:text="@string/candidates_section_3_person_name_3"
+		        android:textAlignment="center"
+		        android:textColor="@android:color/black"
+		        android:textSize="16sp" />
+		    
+		    <Button
+		        android:id="@+id/plusone_14"
+		        android:layout_width="40dp"
+		        android:layout_height="36dp"
+		        android:layout_alignParentEnd="true"
+		        android:layout_centerVertical="true"
+		        android:layout_marginEnd="20dp"
+		        android:adjustViewBounds="true"
+		        android:background="@drawable/plus_button"
+		        android:onClick="onClickFunc"
+		        android:tag="14"
+		        android:scaleType="centerCrop" />
+
+	    </RelativeLayout>
+	    
+	    <RelativeLayout 
+	        android:id="@+id/section_3_body_4"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:background="@drawable/black_border_frame" >
+
+		    <TextView
+		        android:id="@+id/candidates_section_3_person_location_4"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginStart="20dp"
+		        android:layout_marginTop="8dp"
+		        android:background="@android:color/transparent"
+		        android:text="@string/candidates_section_3_person_location_4"
+		        android:textAlignment="center"
+		        android:textColor="@android:color/black"
+		        android:textSize="16sp"
+		        android:textStyle="bold" />
+		    
+		    <TextView
+		        android:id="@+id/candidates_section_3_person_name_4"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/candidates_section_3_person_location_4"
+		        android:layout_marginBottom="8dp"
+		        android:layout_marginStart="20dp"
+		        android:background="@android:color/transparent"
+		        android:paddingBottom="8dp"
+		        android:text="@string/candidates_section_3_person_name_4"
+		        android:textAlignment="center"
+		        android:textColor="@android:color/black"
+		        android:textSize="16sp" />
+		    
+		    <Button
+		        android:id="@+id/plusone_15"
+		        android:layout_width="40dp"
+		        android:layout_height="36dp"
+		        android:layout_alignParentEnd="true"
+		        android:layout_centerVertical="true"
+		        android:layout_marginEnd="20dp"
+		        android:adjustViewBounds="true"
+		        android:background="@drawable/plus_button"
+		        android:onClick="onClickFunc"
+		        android:tag="15"
+		        android:scaleType="centerCrop" />
+
+	    </RelativeLayout>
+	    
+	    <RelativeLayout 
+	        android:id="@+id/section_3_body_5"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:background="@drawable/black_border_frame" >
+
+		    <TextView
+		        android:id="@+id/candidates_section_3_person_location_5"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginStart="20dp"
+		        android:layout_marginTop="8dp"
+		        android:background="@android:color/transparent"
+		        android:text="@string/candidates_section_3_person_location_5"
+		        android:textAlignment="center"
+		        android:textColor="@android:color/black"
+		        android:textSize="16sp"
+		        android:textStyle="bold" />
+		    
+		    <TextView
+		        android:id="@+id/candidates_section_3_person_name_5"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/candidates_section_3_person_location_5"
+		        android:layout_marginBottom="8dp"
+		        android:layout_marginStart="20dp"
+		        android:background="@android:color/transparent"
+		        android:paddingBottom="8dp"
+		        android:text="@string/candidates_section_3_person_name_5"
+		        android:textAlignment="center"
+		        android:textColor="@android:color/black"
+		        android:textSize="16sp" />
+		    
+		    <Button
+		        android:id="@+id/plusone_16"
+		        android:layout_width="40dp"
+		        android:layout_height="36dp"
+		        android:layout_alignParentEnd="true"
+		        android:layout_centerVertical="true"
+		        android:layout_marginEnd="20dp"
+		        android:adjustViewBounds="true"
+		        android:background="@drawable/plus_button"
+		        android:onClick="onClickFunc"
+		        android:tag="16"
+		        android:scaleType="centerCrop" />
+
+	    </RelativeLayout>
+	    
+	    <RelativeLayout 
+	        android:id="@+id/section_3_body_6"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:background="@drawable/black_border_frame" >
+
+		    <TextView
+		        android:id="@+id/candidates_section_3_person_location_6"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginStart="20dp"
+		        android:layout_marginTop="8dp"
+		        android:background="@android:color/transparent"
+		        android:text="@string/candidates_section_3_person_location_6"
+		        android:textAlignment="center"
+		        android:textColor="@android:color/black"
+		        android:textSize="16sp"
+		        android:textStyle="bold" />
+		    
+		    <TextView
+		        android:id="@+id/candidates_section_3_person_name_6"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/candidates_section_3_person_location_6"
+		        android:layout_marginBottom="8dp"
+		        android:layout_marginStart="20dp"
+		        android:background="@android:color/transparent"
+		        android:paddingBottom="8dp"
+		        android:text="@string/candidates_section_3_person_name_6"
+		        android:textAlignment="center"
+		        android:textColor="@android:color/black"
+		        android:textSize="16sp" />
+		    
+		    <Button
+		        android:id="@+id/plusone_17"
+		        android:layout_width="40dp"
+		        android:layout_height="36dp"
+		        android:layout_alignParentEnd="true"
+		        android:layout_centerVertical="true"
+		        android:layout_marginEnd="20dp"
+		        android:adjustViewBounds="true"
+		        android:background="@drawable/plus_button"
+		        android:onClick="onClickFunc"
+		        android:tag="17"
+		        android:scaleType="centerCrop" />
+
+	    </RelativeLayout>
+	    
+	    <RelativeLayout 
+	        android:id="@+id/section_3_body_7"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:background="@drawable/black_border_frame" >
+
+		    <TextView
+		        android:id="@+id/candidates_section_3_person_location_7"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginStart="20dp"
+		        android:layout_marginTop="8dp"
+		        android:background="@android:color/transparent"
+		        android:text="@string/candidates_section_3_person_location_7"
+		        android:textAlignment="center"
+		        android:textColor="@android:color/black"
+		        android:textSize="16sp"
+		        android:textStyle="bold" />
+		    
+		    <TextView
+		        android:id="@+id/candidates_section_3_person_name_7"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/candidates_section_3_person_location_7"
+		        android:layout_marginBottom="8dp"
+		        android:layout_marginStart="20dp"
+		        android:background="@android:color/transparent"
+		        android:paddingBottom="8dp"
+		        android:text="@string/candidates_section_3_person_name_7"
+		        android:textAlignment="center"
+		        android:textColor="@android:color/black"
+		        android:textSize="16sp" />
+		    
+		    <Button
+		        android:id="@+id/plusone_18"
+		        android:layout_width="40dp"
+		        android:layout_height="36dp"
+		        android:layout_alignParentEnd="true"
+		        android:layout_centerVertical="true"
+		        android:layout_marginEnd="20dp"
+		        android:adjustViewBounds="true"
+		        android:background="@drawable/plus_button"
+		        android:onClick="onClickFunc"
+		        android:tag="18"
+		        android:scaleType="centerCrop" />
+
+	    </RelativeLayout>
+	    
+	    <RelativeLayout 
+	        android:id="@+id/section_3_body_8"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:background="@drawable/black_border_frame" >
+
+		    <TextView
+		        android:id="@+id/candidates_section_3_person_location_8"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginStart="20dp"
+		        android:layout_marginTop="8dp"
+		        android:background="@android:color/transparent"
+		        android:text="@string/candidates_section_3_person_location_8"
+		        android:textAlignment="center"
+		        android:textColor="@android:color/black"
+		        android:textSize="16sp"
+		        android:textStyle="bold" />
+		    
+		    <TextView
+		        android:id="@+id/candidates_section_3_person_name_8"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/candidates_section_3_person_location_8"
+		        android:layout_marginBottom="8dp"
+		        android:layout_marginStart="20dp"
+		        android:background="@android:color/transparent"
+		        android:paddingBottom="8dp"
+		        android:text="@string/candidates_section_3_person_name_8"
+		        android:textAlignment="center"
+		        android:textColor="@android:color/black"
+		        android:textSize="16sp" />
+		    
+		    <Button
+		        android:id="@+id/plusone_19"
+		        android:layout_width="40dp"
+		        android:layout_height="36dp"
+		        android:layout_alignParentEnd="true"
+		        android:layout_centerVertical="true"
+		        android:layout_marginEnd="20dp"
+		        android:adjustViewBounds="true"
+		        android:background="@drawable/plus_button"
+		        android:onClick="onClickFunc"
+		        android:tag="19"
+		        android:scaleType="centerCrop" />
+
+	    </RelativeLayout>
+	    
+	    <RelativeLayout 
+	        android:id="@+id/section_3_body_9"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:background="@drawable/black_border_frame" >
+
+		    <TextView
+		        android:id="@+id/candidates_section_3_person_location_9"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginStart="20dp"
+		        android:layout_marginTop="8dp"
+		        android:background="@android:color/transparent"
+		        android:text="@string/candidates_section_3_person_location_9"
+		        android:textAlignment="center"
+		        android:textColor="@android:color/black"
+		        android:textSize="16sp"
+		        android:textStyle="bold" />
+		    
+		    <TextView
+		        android:id="@+id/candidates_section_3_person_name_9"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/candidates_section_3_person_location_9"
+		        android:layout_marginBottom="8dp"
+		        android:layout_marginStart="20dp"
+		        android:background="@android:color/transparent"
+		        android:paddingBottom="8dp"
+		        android:text="@string/candidates_section_3_person_name_9"
+		        android:textAlignment="center"
+		        android:textColor="@android:color/black"
+		        android:textSize="16sp" />
+		    
+		    <Button
+		        android:id="@+id/plusone_20"
+		        android:layout_width="40dp"
+		        android:layout_height="36dp"
+		        android:layout_alignParentEnd="true"
+		        android:layout_centerVertical="true"
+		        android:layout_marginEnd="20dp"
+		        android:adjustViewBounds="true"
+		        android:background="@drawable/plus_button"
+		        android:onClick="onClickFunc"
+		        android:tag="20"
+		        android:scaleType="centerCrop" />
+
+	    </RelativeLayout>
+	    
+	    <RelativeLayout 
+	        android:id="@+id/section_3_body_10"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:background="@drawable/black_border_frame" >
+
+		    <TextView
+		        android:id="@+id/candidates_section_3_person_location_10"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginStart="20dp"
+		        android:layout_marginTop="8dp"
+		        android:background="@android:color/transparent"
+		        android:text="@string/candidates_section_3_person_location_10"
+		        android:textAlignment="center"
+		        android:textColor="@android:color/black"
+		        android:textSize="16sp"
+		        android:textStyle="bold" />
+		    
+		    <TextView
+		        android:id="@+id/candidates_section_3_person_name_10"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/candidates_section_3_person_location_10"
+		        android:layout_marginBottom="8dp"
+		        android:layout_marginStart="20dp"
+		        android:background="@android:color/transparent"
+		        android:paddingBottom="8dp"
+		        android:text="@string/candidates_section_3_person_name_10"
+		        android:textAlignment="center"
+		        android:textColor="@android:color/black"
+		        android:textSize="16sp" />
+		    
+		    <Button
+		        android:id="@+id/plusone_21"
+		        android:layout_width="40dp"
+		        android:layout_height="36dp"
+		        android:layout_alignParentEnd="true"
+		        android:layout_centerVertical="true"
+		        android:layout_marginEnd="20dp"
+		        android:adjustViewBounds="true"
+		        android:background="@drawable/plus_button"
+		        android:onClick="onClickFunc"
+		        android:tag="21"
+		        android:scaleType="centerCrop" />
+
+	    </RelativeLayout>
+	    
+	    <RelativeLayout 
+	        android:id="@+id/section_3_body_11"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:background="@drawable/black_border_frame" >
+
+		    <TextView
+		        android:id="@+id/candidates_section_3_person_location_11"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginStart="20dp"
+		        android:layout_marginTop="8dp"
+		        android:background="@android:color/transparent"
+		        android:text="@string/candidates_section_3_person_location_11"
+		        android:textAlignment="center"
+		        android:textColor="@android:color/black"
+		        android:textSize="16sp"
+		        android:textStyle="bold" />
+		    
+		    <TextView
+		        android:id="@+id/candidates_section_3_person_name_11"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/candidates_section_3_person_location_11"
+		        android:layout_marginBottom="8dp"
+		        android:layout_marginStart="20dp"
+		        android:background="@android:color/transparent"
+		        android:paddingBottom="8dp"
+		        android:text="@string/candidates_section_3_person_name_11"
+		        android:textAlignment="center"
+		        android:textColor="@android:color/black"
+		        android:textSize="16sp" />
+		    
+		    <Button
+		        android:id="@+id/plusone_22"
+		        android:layout_width="40dp"
+		        android:layout_height="36dp"
+		        android:layout_alignParentEnd="true"
+		        android:layout_centerVertical="true"
+		        android:layout_marginEnd="20dp"
+		        android:adjustViewBounds="true"
+		        android:background="@drawable/plus_button"
+		        android:onClick="onClickFunc"
+		        android:tag="22"
 		        android:scaleType="centerCrop" />
 
 	    </RelativeLayout>
