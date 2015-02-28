@@ -86,6 +86,12 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 
         // Specify that we will be displaying tabs in the action bar.
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+        
+        // Specify that we will be NOT displaying the title bar.
+        actionBar.setDisplayShowTitleEnabled(false);
+        
+        // Specify that we will be NOT displaying the home icon.
+        actionBar.setDisplayShowHomeEnabled(false);
 
         // Set up the ViewPager, attaching the adapter and setting up a listener for when the
         // user swipes between sections.
