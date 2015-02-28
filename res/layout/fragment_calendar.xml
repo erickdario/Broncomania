@@ -32,7 +32,7 @@
 		        android:text="@string/events_title_1"
 		        android:textAlignment="center"
 		        android:textColor="@color/white_buttons"
-		        android:textSize="12sp" />
+		        android:textSize="14sp" />
 		    
 		    <TextView
 		        android:id="@+id/events_description_1"
@@ -43,7 +43,7 @@
 		        android:text="@string/events_description_1"
 		        android:textAlignment="center"
 		        android:textColor="@color/white_buttons"
-		        android:textSize="12sp" />
+		        android:textSize="14sp" />
 		    
 		    <TextView
 		        android:id="@+id/events_location_1"
@@ -55,7 +55,7 @@
 		        android:text="@string/events_location_1"
 		        android:textAlignment="center"
 		        android:textColor="@color/white_buttons"
-		        android:textSize="12sp" />
+		        android:textSize="14sp" />
 
 	    </LinearLayout>
 	    
@@ -75,7 +75,7 @@
 		        android:text="@string/events_title_2"
 		        android:textAlignment="center"
 		        android:textColor="@color/dark_gray_event"
-		        android:textSize="12sp" />
+		        android:textSize="14sp" />
 		    
 		    <TextView
 		        android:id="@+id/events_description_2"
@@ -86,7 +86,7 @@
 		        android:text="@string/events_description_2"
 		        android:textAlignment="center"
 		        android:textColor="@color/dark_gray_event"
-		        android:textSize="12sp" />
+		        android:textSize="14sp" />
 		    
 		    <TextView
 		        android:id="@+id/events_location_2"
@@ -98,7 +98,7 @@
 		        android:text="@string/events_location_2"
 		        android:textAlignment="center"
 		        android:textColor="@color/dark_gray_event"
-		        android:textSize="12sp" />
+		        android:textSize="14sp" />
 	    </LinearLayout>
 	    
 	    <LinearLayout 
@@ -117,7 +117,7 @@
 		        android:text="@string/events_title_3"
 		        android:textAlignment="center"
 		        android:textColor="@color/white_buttons"
-		        android:textSize="12sp" />
+		        android:textSize="14sp" />
 		    
 		    <TextView
 		        android:id="@+id/events_description_3"
@@ -128,7 +128,7 @@
 		        android:text="@string/events_description_3"
 		        android:textAlignment="center"
 		        android:textColor="@color/white_buttons"
-		        android:textSize="12sp" />
+		        android:textSize="14sp" />
 		    
 		    <TextView
 		        android:id="@+id/events_location_3"
@@ -140,7 +140,7 @@
 		        android:text="@string/events_location_3"
 		        android:textAlignment="center"
 		        android:textColor="@color/white_buttons"
-		        android:textSize="12sp" />
+		        android:textSize="14sp" />
 	    </LinearLayout>
 	    
 	    <LinearLayout 
@@ -159,7 +159,7 @@
 		        android:text="@string/events_title_4"
 		        android:textAlignment="center"
 		        android:textColor="@color/dark_purple_event"
-		        android:textSize="12sp" />
+		        android:textSize="14sp" />
 		    
 		    <TextView
 		        android:id="@+id/events_description_4"
@@ -170,7 +170,7 @@
 		        android:text="@string/events_description_4"
 		        android:textAlignment="center"
 		        android:textColor="@color/dark_purple_event"
-		        android:textSize="12sp" />
+		        android:textSize="14sp" />
 		    
 		    <TextView
 		        android:id="@+id/events_location_4"
@@ -182,7 +182,7 @@
 		        android:text="@string/events_location_4"
 		        android:textAlignment="center"
 		        android:textColor="@color/dark_purple_event"
-		        android:textSize="12sp" />
+		        android:textSize="14sp" />
 	    </LinearLayout>
 	    
 	    <LinearLayout 
@@ -201,7 +201,7 @@
 		        android:text="@string/events_title_5"
 		        android:textAlignment="center"
 		        android:textColor="@color/white_buttons"
-		        android:textSize="12sp" />
+		        android:textSize="14sp" />
 		    
 		    <TextView
 		        android:id="@+id/events_description_5"
@@ -212,7 +212,7 @@
 		        android:text="@string/events_description_5"
 		        android:textAlignment="center"
 		        android:textColor="@color/white_buttons"
-		        android:textSize="12sp" />
+		        android:textSize="14sp" />
 		    
 		    <TextView
 		        android:id="@+id/events_location_5"
@@ -224,7 +224,7 @@
 		        android:text="@string/events_location_5"
 		        android:textAlignment="center"
 		        android:textColor="@color/white_buttons"
-		        android:textSize="12sp" />
+		        android:textSize="14sp" />
 	    </LinearLayout>
 	    
 	    <LinearLayout 
@@ -243,7 +243,7 @@
 		        android:text="@string/events_title_6"
 		        android:textAlignment="center"
 		        android:textColor="@color/dark_purple_event"
-		        android:textSize="12sp" />
+		        android:textSize="14sp" />
 		    
 		    <TextView
 		        android:id="@+id/donate_description"
@@ -254,7 +254,7 @@
 		        android:text="@string/events_description_1"
 		        android:textAlignment="center"
 		        android:textColor="@color/dark_purple_event"
-		        android:textSize="12sp" />
+		        android:textSize="14sp" />
 		    
 		    <TextView
 		        android:id="@+id/events_location_6"
@@ -266,7 +266,7 @@
 		        android:text="@string/events_location_6"
 		        android:textAlignment="center"
 		        android:textColor="@color/dark_purple_event"
-		        android:textSize="12sp" />
+		        android:textSize="14sp" />
 	    </LinearLayout>
 	    
 	    <LinearLayout 
@@ -285,7 +285,7 @@
 		        android:text="@string/events_title_7"
 		        android:textAlignment="center"
 		        android:textColor="@color/white_buttons"
-		        android:textSize="12sp" />
+		        android:textSize="14sp" />
 		    
 		    <TextView
 		        android:id="@+id/events_description_7"
@@ -296,7 +296,7 @@
 		        android:text="@string/events_description_7"
 		        android:textAlignment="center"
 		        android:textColor="@color/white_buttons"
-		        android:textSize="12sp" />
+		        android:textSize="14sp" />
 		    
 		    <TextView
 		        android:id="@+id/events_location_7"
@@ -308,7 +308,7 @@
 		        android:text="@string/events_location_7"
 		        android:textAlignment="center"
 		        android:textColor="@color/white_buttons"
-		        android:textSize="12sp" />
+		        android:textSize="14sp" />
 	    </LinearLayout>
 	
 	</LinearLayout>

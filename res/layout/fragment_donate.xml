@@ -14,10 +14,10 @@
         android:id="@+id/donate_background"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:adjustViewBounds="true"
-        android:contentDescription="@string/donate_background_image_description"
+        android:adjustViewBounds="false"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop"
         android:src="@drawable/mountain" />
 
     <ImageView
@@ -26,23 +26,23 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/donate_title"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
         android:adjustViewBounds="true"
         android:contentDescription="@string/count_down_image_description"
         android:src="@drawable/count_down" />
-    
+
     <TextView
         android:id="@+id/donate_days"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/count_down"
         android:background="@android:color/transparent"
         android:gravity="center"
-        android:layout_below="@+id/count_down" 
         android:text="@string/donate_days"
         android:textAlignment="center"
         android:textColor="@color/blue_letters"
         android:textSize="20sp" />
-    
-    
+
     <Button
         android:id="@+id/button_donation"
         style="@style/AppBaseTheme"
@@ -53,8 +53,7 @@
         android:layout_marginTop="100dp"
         android:background="@drawable/green_button"
         android:text="@string/donate_donation"
-        android:textColor="@color/white_buttons"
-        android:textColorHint="@color/blue_buttons"
+        android:textColor="@drawable/button_white_text"
         android:width="200dp" />
 
     <Button
@@ -66,12 +65,9 @@
         android:layout_below="@+id/button_donation"
         android:layout_marginTop="18dp"
         android:background="@drawable/blue_button"
-        android:ellipsize="none"
         android:text="@string/donate_transparency"
-        android:textColor="@color/blue_buttons"
-        android:width="200dp"
-        android:color="@color/blue_buttons" />
-
+        android:textColor="@drawable/button_blue_text"
+        android:width="200dp" />
 
     <TextView
         android:id="@+id/donate_title"

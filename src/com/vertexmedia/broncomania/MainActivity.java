@@ -53,7 +53,8 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
         final int[] ICONS = new int[] {
                 R.drawable.home,
                 R.drawable.money,
-                R.drawable.calendar
+                R.drawable.calendar,
+                R.drawable.candidates
         };
 
         
@@ -97,7 +98,6 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
             // listener for when this tab is selected.
             actionBar.addTab(
                     actionBar.newTab().setIcon(ICONS[i])
-                            .setText(mAppSectionsPagerAdapter.getPageTitle(i))
                             .setTabListener(this));
         }
     }
@@ -148,13 +148,19 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
                     args.putInt(CalendarSectionFragment.ARG_SECTION_NUMBER, i + 1);
                     fragment.setArguments(args);
                 	return fragment;
+                case 3:
+                	fragment = new CandidatesSectionFragment();
+                    args = new Bundle();
+                    args.putInt(CandidatesSectionFragment.ARG_SECTION_NUMBER, i + 1);
+                    fragment.setArguments(args);
+                	return fragment;
             }
 			return null;
         }
 
         @Override
         public int getCount() {
-            return 3;
+            return 4;
         }
 
         @Override
@@ -164,7 +170,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
     }
 
     /**
-     * A fragment that launches other parts of the demo application.
+     * A fragment representing a section of the app
      */
     public static class HomeSectionFragment extends Fragment {
     	
@@ -205,6 +211,21 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_donate, container, false);
+            return rootView;
+        }
+    }
+    
+    /**
+     * A fragment representing a section of the app
+     */
+    public static class CandidatesSectionFragment extends Fragment {
+
+        public static final String ARG_SECTION_NUMBER = "section_number";
+
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                Bundle savedInstanceState) {
+            View rootView = inflater.inflate(R.layout.fragment_candidates, container, false);
             return rootView;
         }
     }

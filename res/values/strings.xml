@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">Broncomania</string>
-    <string name="home_title">Jaime Rodriguez &quot;El Bronco&quot;</string>
+    <string name="home_title">Jaime Rodriguez "El Bronco"</string>
     <string name="home_phrase">JUNTOS TÚ Y YO VAMOS A LOGRAR LO QUE NUEVO LEÓN NECESITA</string>
     <string name="home_description_title">¡Vamos a entrarle con todo!</string>
     <string name="home_description_body">Estamos haciendo historia, no podrán detener a estos broncos que queremos un Nuevo León con más oportunidades, más seguro y fuerte</string>
@@ -36,7 +36,27 @@
     <string name="events_location_3"> "La Huasteca" Santa Catarina N.L.</string>
     <string name="events_location_4"> 16 de Septiembre 1511, Nuevas Colonias</string>
     <string name="events_location_5"> Zona centro Monterrey</string>
-    <string name="events_location_6"> Guadalupe No. 208 Pte. Centro, Guadalupe, N.L.</string>
+    <string name="events_location_6"> Guadalupe #208 Pte. Centro, Guadalupe, N.L.</string>
     <string name="events_location_7"> </string>
+    
+    <string name="candidates_section_1"> Gobernador </string>
+    <string name="candidates_section_2"> Alcaldías </string>
+    <string name="candidates_section_3"> Diputación Local </string>
+    
+    <string name="candidates_section_1_person_name_1"> Jaime Rodriguez </string>
+    <string name="candidates_section_1_person_location_1"> Nuevo León </string>
+    
+    <string name="candidates_section_2_person_name_1"> Gerardo Alanís </string>
+    <string name="candidates_section_2_person_location_1"> Guadalupe </string>
+    <string name="candidates_section_2_person_name_2"> Gabriel Almaguer </string>
+    <string name="candidates_section_2_person_location_2"> Escobedo </string>
+    <string name="candidates_section_2_person_name_3"> Luis Fernando Marín </string>
+    <string name="candidates_section_2_person_location_3"> Apodaca </string>
+    <string name="candidates_section_2_person_name_4"> Efrein García </string>
+    <string name="candidates_section_2_person_location_4"> Santa Catarina </string>
+    
+    <string name="candidates_section_3_person_name_1"> Jose Eduardo Santos </string>
+    <string name="candidates_section_3_person_location_1"> Distrito 8 </string>
+    
 
 </resources>
