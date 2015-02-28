@@ -21,19 +21,27 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
+import com.facebook.AppEventsLogger;
+import com.facebook.UiLifecycleHelper;
+import com.facebook.widget.FacebookDialog;
+
 import android.annotation.SuppressLint;
 import android.app.ActionBar;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends FragmentActivity implements ActionBar.TabListener {
 
@@ -52,13 +60,15 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
     ViewPager mViewPager;
     
     static TextView tv1;
+    
+    private UiLifecycleHelper uiHelper;
 
-    @SuppressLint("SimpleDateFormat")
 	public void onCreate(Bundle savedInstanceState) {
     	
-    	
-    	
         super.onCreate(savedInstanceState);
+        
+        uiHelper = new UiLifecycleHelper(this, null);
+        uiHelper.onCreate(savedInstanceState);
         
         final int[] ICONS = new int[] {
                 R.drawable.home,
@@ -116,10 +126,53 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
                     actionBar.newTab().setIcon(ICONS[i])
                             .setTabListener(this));
         }
-        
-
-        
     }
+	
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+	    super.onActivityResult(requestCode, resultCode, data);
+
+	    uiHelper.onActivityResult(requestCode, resultCode, data, new FacebookDialog.Callback() {
+	        @Override
+	        public void onError(FacebookDialog.PendingCall pendingCall, Exception error, Bundle data) {
+	            Log.e("Activity", String.format("Error: %s", error.toString()));
+	        }
+
+	        @Override
+	        public void onComplete(FacebookDialog.PendingCall pendingCall, Bundle data) {
+	            Log.i("Activity", "Success!");
+	        }
+	    });
+	}
+	
+	@Override
+	protected void onResume() {
+	  super.onResume();
+
+	  uiHelper.onResume();
+	  // Logs 'install' and 'app activate' App Events.
+	  AppEventsLogger.activateApp(this);
+	}
+	
+	@Override
+	protected void onSaveInstanceState(Bundle outState) {
+	    super.onSaveInstanceState(outState);
+	    uiHelper.onSaveInstanceState(outState);
+	}
+	
+	@Override
+	protected void onPause() {
+	  super.onPause();
+	  uiHelper.onPause();
+	  // Logs 'app deactivate' App Event.
+	  AppEventsLogger.deactivateApp(this);
+	}
+	
+	@Override
+	public void onDestroy() {
+	    super.onDestroy();
+	    uiHelper.onDestroy();
+	}
 
     @Override
     public void onTabUnselected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
@@ -222,7 +275,8 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
     /**
      * A fragment representing a section of the app
      */
-    public static class DonateSectionFragment extends Fragment {
+    @SuppressLint("SimpleDateFormat")
+	public static class DonateSectionFragment extends Fragment {
 
         public static final String ARG_SECTION_NUMBER = "section_number";
 
@@ -234,8 +288,8 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 
             try {
             	SimpleDateFormat simpleDateFormat = 
-                        new SimpleDateFormat("dd/M/yyyy");
-    			Date dealine = (Date) simpleDateFormat.parse("06/06/2015");
+                        new SimpleDateFormat("dd/M/yyyy hh:mm");
+    			Date dealine = (Date) simpleDateFormat.parse("06/06/2015 23:59");
     			Date now = (Date) Calendar.getInstance().getTime(); 
     			long diff = dealine.getTime() - now.getTime();
     			long seconds = diff / 1000;
@@ -265,7 +319,29 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_candidates, container, false);
+            
             return rootView;
         }
+    }
+    
+
+    
+    public void onClickFunc(View view) {
+    	
+    	String pageNumber = (String) view.getTag(); 
+    	
+    	if (FacebookDialog.canPresentShareDialog(getApplicationContext(), 
+                FacebookDialog.ShareDialogFeature.SHARE_DIALOG)) {
+
+	    	FacebookDialog shareDialog = new FacebookDialog.ShareDialogBuilder(this)
+	    			.setApplicationName("Broncomania")
+	    			.setCaption("Yo ya ayudé, ahora te toca a tí")
+	    			.setName("Apoya a la Broncomania")
+	    			.setLink("bit.ly/SumatePorNL")
+			        .setDescription("Ayuda a Nuevo León")	
+			        .build();
+	    	uiHelper.trackPendingDialogCall(shareDialog.present());
+    	} else {
+    	}
     }
 }

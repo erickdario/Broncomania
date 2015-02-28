@@ -34,15 +34,15 @@
 		        android:id="@+id/candidates_section_1"
 		        android:layout_width="wrap_content"
 		        android:layout_height="wrap_content"
-		        android:layout_marginBottom="10dp"
+		        android:layout_marginBottom="12dp"
 		        android:layout_marginStart="20dp"
-		        android:layout_marginTop="10dp"
+		        android:layout_marginTop="12dp"
 		        android:textStyle="bold"
 		        android:background="@android:color/transparent"
 		        android:text="@string/candidates_section_1"
 		        android:textAlignment="center"
 		        android:textColor="@color/white_buttons"
-		        android:textSize="18sp" />
+		        android:textSize="20sp" />
 
 	    </LinearLayout>
 	    
@@ -58,12 +58,12 @@
 		        android:layout_width="wrap_content"
 		        android:layout_height="wrap_content"
 		        android:layout_marginStart="20dp"
-		        android:layout_marginTop="5dp"
+		        android:layout_marginTop="8dp"
 		        android:background="@android:color/transparent"
 		        android:text="@string/candidates_section_1_person_location_1"
 		        android:textAlignment="center"
 		        android:textColor="@android:color/black"
-		        android:textSize="14sp"
+		        android:textSize="16sp"
 		        android:textStyle="bold" />
 		    
 		    <TextView
@@ -74,11 +74,11 @@
 		        android:layout_marginBottom="5dp"
 		        android:layout_marginStart="20dp"
 		        android:background="@android:color/transparent"
-		        android:paddingBottom="5dp"
+		        android:paddingBottom="8dp"
 		        android:text="@string/candidates_section_1_person_name_1"
 		        android:textAlignment="center"
 		        android:textColor="@android:color/black"
-		        android:textSize="14sp" />
+		        android:textSize="16sp" />
 
 		    <Button
 		        android:id="@+id/plusone_1"
@@ -88,6 +88,8 @@
 		        android:layout_centerVertical="true"
 		        android:layout_marginEnd="20dp"
 		        android:adjustViewBounds="true"
+		        android:onClick="onClickFunc"
+		        android:tag="1"
 		        android:background="@drawable/plus_button"
 		        android:scaleType="centerCrop" />
 
@@ -104,15 +106,15 @@
 		        android:id="@+id/candidates_section_2"
 		        android:layout_width="wrap_content"
 		        android:layout_height="wrap_content"
-		        android:layout_marginBottom="10dp"
+		        android:layout_marginBottom="12dp"
 		        android:layout_marginStart="20dp"
-		        android:layout_marginTop="10dp"
+		        android:layout_marginTop="12dp"
 		        android:textStyle="bold"
 		        android:background="@android:color/transparent"
 		        android:text="@string/candidates_section_2"
 		        android:textAlignment="center"
 		        android:textColor="@color/white_buttons"
-		        android:textSize="18sp" />
+		        android:textSize="20sp" />
 
 	    </LinearLayout>
 	    
@@ -128,12 +130,12 @@
 		        android:layout_width="wrap_content"
 		        android:layout_height="wrap_content"
 		        android:layout_marginStart="20dp"
-		        android:layout_marginTop="5dp"
+		        android:layout_marginTop="8dp"
 		        android:background="@android:color/transparent"
 		        android:text="@string/candidates_section_2_person_location_1"
 		        android:textAlignment="center"
 		        android:textColor="@android:color/black"
-		        android:textSize="14sp"
+		        android:textSize="16sp"
 		        android:textStyle="bold" />
 		    
 		    <TextView
@@ -144,11 +146,11 @@
 		        android:layout_marginBottom="5dp"
 		        android:layout_marginStart="20dp"
 		        android:background="@android:color/transparent"
-		        android:paddingBottom="5dp"
+		        android:paddingBottom="8dp"
 		        android:text="@string/candidates_section_2_person_name_1"
 		        android:textAlignment="center"
 		        android:textColor="@android:color/black"
-		        android:textSize="14sp" />
+		        android:textSize="16sp" />
 		    
 		    <Button
 		        android:id="@+id/plusone_2"
@@ -159,6 +161,8 @@
 		        android:layout_marginEnd="20dp"
 		        android:adjustViewBounds="true"
 		        android:background="@drawable/plus_button"
+		        android:onClick="onClickFunc"
+		        android:tag="2"
 		        android:scaleType="centerCrop" />
 
 	    </RelativeLayout>
@@ -175,12 +179,12 @@
 		        android:layout_width="wrap_content"
 		        android:layout_height="wrap_content"
 		        android:layout_marginStart="20dp"
-		        android:layout_marginTop="5dp"
+		        android:layout_marginTop="8dp"
 		        android:background="@android:color/transparent"
 		        android:text="@string/candidates_section_2_person_location_2"
 		        android:textAlignment="center"
 		        android:textColor="@android:color/black"
-		        android:textSize="14sp"
+		        android:textSize="16sp"
 		        android:textStyle="bold" />
 		    
 		    <TextView
@@ -188,14 +192,14 @@
 		        android:layout_width="wrap_content"
 		        android:layout_height="wrap_content"
 		        android:layout_below="@+id/candidates_section_2_person_location_2"
-		        android:layout_marginBottom="5dp"
+		        android:layout_marginBottom="8dp"
 		        android:layout_marginStart="20dp"
 		        android:background="@android:color/transparent"
 		        android:paddingBottom="5dp"
 		        android:text="@string/candidates_section_2_person_name_2"
 		        android:textAlignment="center"
 		        android:textColor="@android:color/black"
-		        android:textSize="14sp" />
+		        android:textSize="16sp" />
 		    
 		    <Button
 		        android:id="@+id/plusone_3"
@@ -206,6 +210,8 @@
 		        android:layout_marginEnd="20dp"
 		        android:adjustViewBounds="true"
 		        android:background="@drawable/plus_button"
+		        android:onClick="onClickFunc"
+		        android:tag="3"
 		        android:scaleType="centerCrop" />
 
 	    </RelativeLayout>
@@ -222,12 +228,12 @@
 		        android:layout_width="wrap_content"
 		        android:layout_height="wrap_content"
 		        android:layout_marginStart="20dp"
-		        android:layout_marginTop="5dp"
+		        android:layout_marginTop="8dp"
 		        android:background="@android:color/transparent"
 		        android:text="@string/candidates_section_2_person_location_3"
 		        android:textAlignment="center"
 		        android:textColor="@android:color/black"
-		        android:textSize="14sp"
+		        android:textSize="16sp"
 		        android:textStyle="bold" />
 		    
 		    <TextView
@@ -235,14 +241,14 @@
 		        android:layout_width="wrap_content"
 		        android:layout_height="wrap_content"
 		        android:layout_below="@+id/candidates_section_2_person_location_3"
-		        android:layout_marginBottom="5dp"
+		        android:layout_marginBottom="8dp"
 		        android:layout_marginStart="20dp"
 		        android:background="@android:color/transparent"
-		        android:paddingBottom="5dp"
+		        android:paddingBottom="8dp"
 		        android:text="@string/candidates_section_2_person_name_3"
 		        android:textAlignment="center"
 		        android:textColor="@android:color/black"
-		        android:textSize="14sp" />
+		        android:textSize="16sp" />
 		    
 		    <Button
 		        android:id="@+id/plusone_4"
@@ -252,6 +258,8 @@
 		        android:layout_centerVertical="true"
 		        android:layout_marginEnd="20dp"
 		        android:adjustViewBounds="true"
+		        android:onClick="onClickFunc"
+		        android:tag="4"
 		        android:background="@drawable/plus_button"
 		        android:scaleType="centerCrop" />
 
@@ -269,12 +277,12 @@
 		        android:layout_width="wrap_content"
 		        android:layout_height="wrap_content"
 		        android:layout_marginStart="20dp"
-		        android:layout_marginTop="5dp"
+		        android:layout_marginTop="8dp"
 		        android:background="@android:color/transparent"
 		        android:text="@string/candidates_section_2_person_location_4"
 		        android:textAlignment="center"
 		        android:textColor="@android:color/black"
-		        android:textSize="14sp"
+		        android:textSize="16sp"
 		        android:textStyle="bold" />
 		    
 		    <TextView
@@ -282,14 +290,14 @@
 		        android:layout_width="wrap_content"
 		        android:layout_height="wrap_content"
 		        android:layout_below="@+id/candidates_section_2_person_location_4"
-		        android:layout_marginBottom="5dp"
+		        android:layout_marginBottom="8dp"
 		        android:layout_marginStart="20dp"
 		        android:background="@android:color/transparent"
-		        android:paddingBottom="5dp"
+		        android:paddingBottom="8dp"
 		        android:text="@string/candidates_section_2_person_name_4"
 		        android:textAlignment="center"
 		        android:textColor="@android:color/black"
-		        android:textSize="14sp" />
+		        android:textSize="16sp" />
 		    
 		    <Button
 		        android:id="@+id/plusone_5"
@@ -300,6 +308,8 @@
 		        android:layout_marginEnd="20dp"
 		        android:adjustViewBounds="true"
 		        android:background="@drawable/plus_button"
+		        android:onClick="onClickFunc"
+		        android:tag="5"
 		        android:scaleType="centerCrop" />
 
 	    </RelativeLayout>
@@ -315,15 +325,15 @@
 		        android:id="@+id/candidates_section_3"
 		        android:layout_width="wrap_content"
 		        android:layout_height="wrap_content"
-		        android:layout_marginBottom="10dp"
+		        android:layout_marginBottom="12dp"
 		        android:layout_marginStart="20dp"
-		        android:layout_marginTop="10dp"
+		        android:layout_marginTop="12dp"
 		        android:textStyle="bold"
 		        android:background="@android:color/transparent"
 		        android:text="@string/candidates_section_3"
 		        android:textAlignment="center"
 		        android:textColor="@color/white_buttons"
-		        android:textSize="18sp" />
+		        android:textSize="20sp" />
 
 	    </LinearLayout>
 	    
@@ -339,12 +349,12 @@
 		        android:layout_width="wrap_content"
 		        android:layout_height="wrap_content"
 		        android:layout_marginStart="20dp"
-		        android:layout_marginTop="5dp"
+		        android:layout_marginTop="8dp"
 		        android:background="@android:color/transparent"
 		        android:text="@string/candidates_section_3_person_location_1"
 		        android:textAlignment="center"
 		        android:textColor="@android:color/black"
-		        android:textSize="14sp"
+		        android:textSize="16sp"
 		        android:textStyle="bold" />
 		    
 		    <TextView
@@ -352,14 +362,14 @@
 		        android:layout_width="wrap_content"
 		        android:layout_height="wrap_content"
 		        android:layout_below="@+id/candidates_section_3_person_location_1"
-		        android:layout_marginBottom="5dp"
+		        android:layout_marginBottom="8dp"
 		        android:layout_marginStart="20dp"
 		        android:background="@android:color/transparent"
-		        android:paddingBottom="5dp"
+		        android:paddingBottom="8dp"
 		        android:text="@string/candidates_section_3_person_name_1"
 		        android:textAlignment="center"
 		        android:textColor="@android:color/black"
-		        android:textSize="14sp" />
+		        android:textSize="16sp" />
 		    
 		    <Button
 		        android:id="@+id/plusone_6"
@@ -370,6 +380,8 @@
 		        android:layout_marginEnd="20dp"
 		        android:adjustViewBounds="true"
 		        android:background="@drawable/plus_button"
+		        android:onClick="onClickFunc"
+		        android:tag="6"
 		        android:scaleType="centerCrop" />
 
 	    </RelativeLayout>
