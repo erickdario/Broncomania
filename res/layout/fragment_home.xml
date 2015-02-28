@@ -23,6 +23,7 @@
         android:paddingTop="10dp"
         android:text="@string/home_title"
         android:textColor="@color/white_buttons"
+        android:textStyle="bold"
         android:textSize="22sp" />
 
     <ImageView

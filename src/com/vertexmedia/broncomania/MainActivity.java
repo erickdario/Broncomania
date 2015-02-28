@@ -16,9 +16,14 @@
 
 package com.vertexmedia.broncomania;
 
+import java.util.Date;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
+import android.annotation.SuppressLint;
 import android.app.ActionBar;
 import android.app.FragmentTransaction;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -28,7 +33,6 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
 import android.widget.TextView;
 
 public class MainActivity extends FragmentActivity implements ActionBar.TabListener {
@@ -46,8 +50,14 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
      * time.
      */
     ViewPager mViewPager;
+    
+    static TextView tv1;
 
-    public void onCreate(Bundle savedInstanceState) {
+    @SuppressLint("SimpleDateFormat")
+	public void onCreate(Bundle savedInstanceState) {
+    	
+    	
+    	
         super.onCreate(savedInstanceState);
         
         final int[] ICONS = new int[] {
@@ -100,6 +110,9 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
                     actionBar.newTab().setIcon(ICONS[i])
                             .setTabListener(this));
         }
+        
+
+        
     }
 
     @Override
@@ -211,6 +224,26 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_donate, container, false);
+
+
+            try {
+            	SimpleDateFormat simpleDateFormat = 
+                        new SimpleDateFormat("dd/M/yyyy");
+    			Date dealine = (Date) simpleDateFormat.parse("06/06/2015");
+    			Date now = (Date) Calendar.getInstance().getTime(); 
+    			long diff = dealine.getTime() - now.getTime();
+    			long seconds = diff / 1000;
+    			long minutes = seconds / 60;
+    			long hours = minutes / 60;
+    			long days = hours / 24;
+    			tv1 = (TextView) rootView.findViewById(R.id.coutdown_days_text);
+    			//TextView myAwesomeTextView = (TextView)findViewById(R.id.myAwesomeTextView);
+    			//Long.toString(days)
+    	        tv1.setText(Long.toString(days));
+    		} catch (ParseException e) {
+    			// TODO Auto-generated catch block
+    			e.printStackTrace();
+    		}
             return rootView;
         }
     }
