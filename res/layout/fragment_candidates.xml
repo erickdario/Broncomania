@@ -89,7 +89,7 @@
 		        android:layout_marginEnd="20dp"
 		        android:adjustViewBounds="true"
 		        android:onClick="onClickFunc"
-		        android:tag="1"
+		        android:tag="Jaime Rodriguez"
 		        android:background="@drawable/plus_button"
 		        android:scaleType="centerCrop" />
 
@@ -162,7 +162,7 @@
 		        android:adjustViewBounds="true"
 		        android:background="@drawable/plus_button"
 		        android:onClick="onClickFunc"
-		        android:tag="2"
+		        android:tag="Genaro Alanís"
 		        android:scaleType="centerCrop" />
 
 	    </RelativeLayout>
@@ -211,7 +211,7 @@
 		        android:adjustViewBounds="true"
 		        android:background="@drawable/plus_button"
 		        android:onClick="onClickFunc"
-		        android:tag="3"
+		        android:tag="Gabriel Almaguer"
 		        android:scaleType="centerCrop" />
 
 	    </RelativeLayout>
@@ -259,7 +259,7 @@
 		        android:layout_marginEnd="20dp"
 		        android:adjustViewBounds="true"
 		        android:onClick="onClickFunc"
-		        android:tag="4"
+		        android:tag="Luis Fernando Marín"
 		        android:background="@drawable/plus_button"
 		        android:scaleType="centerCrop" />
 
@@ -309,7 +309,7 @@
 		        android:adjustViewBounds="true"
 		        android:background="@drawable/plus_button"
 		        android:onClick="onClickFunc"
-		        android:tag="5"
+		        android:tag="Efreín García"
 		        android:scaleType="centerCrop" />
 
 	    </RelativeLayout>
@@ -358,7 +358,7 @@
 		        android:adjustViewBounds="true"
 		        android:background="@drawable/plus_button"
 		        android:onClick="onClickFunc"
-		        android:tag="6"
+		        android:tag="Lorenia Canavati"
 		        android:scaleType="centerCrop" />
 
 	    </RelativeLayout>
@@ -407,7 +407,7 @@
 		        android:adjustViewBounds="true"
 		        android:background="@drawable/plus_button"
 		        android:onClick="onClickFunc"
-		        android:tag="7"
+		        android:tag="César Adrián Valdés"
 		        android:scaleType="centerCrop" />
 
 	    </RelativeLayout>
@@ -456,7 +456,7 @@
 		        android:adjustViewBounds="true"
 		        android:background="@drawable/plus_button"
 		        android:onClick="onClickFunc"
-		        android:tag="8"
+		        android:tag="Juan Ignacio Cantú"
 		        android:scaleType="centerCrop" />
 
 	    </RelativeLayout>
@@ -505,7 +505,7 @@
 		        android:adjustViewBounds="true"
 		        android:background="@drawable/plus_button"
 		        android:onClick="onClickFunc"
-		        android:tag="9"
+		        android:tag="Alfonso Jiménez"
 		        android:scaleType="centerCrop" />
 
 	    </RelativeLayout>
@@ -554,7 +554,7 @@
 		        android:adjustViewBounds="true"
 		        android:background="@drawable/plus_button"
 		        android:onClick="onClickFunc"
-		        android:tag="5"
+		        android:tag="Miguel González"
 		        android:scaleType="centerCrop" />
 
 	    </RelativeLayout>
@@ -603,7 +603,7 @@
 		        android:adjustViewBounds="true"
 		        android:background="@drawable/plus_button"
 		        android:onClick="onClickFunc"
-		        android:tag="11"
+		        android:tag="Luis Pardo"
 		        android:scaleType="centerCrop" />
 
 	    </RelativeLayout>
@@ -675,7 +675,7 @@
 		        android:adjustViewBounds="true"
 		        android:background="@drawable/plus_button"
 		        android:onClick="onClickFunc"
-		        android:tag="12"
+		        android:tag="José Eduardo Santos"
 		        android:scaleType="centerCrop" />
 
 	    </RelativeLayout>
@@ -724,7 +724,7 @@
 		        android:adjustViewBounds="true"
 		        android:background="@drawable/plus_button"
 		        android:onClick="onClickFunc"
-		        android:tag="13"
+		        android:tag="Olga Valentina Treviño"
 		        android:scaleType="centerCrop" />
 
 	    </RelativeLayout>
@@ -773,7 +773,7 @@
 		        android:adjustViewBounds="true"
 		        android:background="@drawable/plus_button"
 		        android:onClick="onClickFunc"
-		        android:tag="14"
+		        android:tag="Antonio González"
 		        android:scaleType="centerCrop" />
 
 	    </RelativeLayout>
@@ -822,7 +822,7 @@
 		        android:adjustViewBounds="true"
 		        android:background="@drawable/plus_button"
 		        android:onClick="onClickFunc"
-		        android:tag="15"
+		        android:tag="Martha Montes Salazar"
 		        android:scaleType="centerCrop" />
 
 	    </RelativeLayout>
@@ -871,7 +871,7 @@
 		        android:adjustViewBounds="true"
 		        android:background="@drawable/plus_button"
 		        android:onClick="onClickFunc"
-		        android:tag="16"
+		        android:tag="Antonio Román Pereyra"
 		        android:scaleType="centerCrop" />
 
 	    </RelativeLayout>
@@ -920,7 +920,7 @@
 		        android:adjustViewBounds="true"
 		        android:background="@drawable/plus_button"
 		        android:onClick="onClickFunc"
-		        android:tag="17"
+		        android:tag="José González"
 		        android:scaleType="centerCrop" />
 
 	    </RelativeLayout>
@@ -969,7 +969,7 @@
 		        android:adjustViewBounds="true"
 		        android:background="@drawable/plus_button"
 		        android:onClick="onClickFunc"
-		        android:tag="18"
+		        android:tag="José Antonio Sánchez"
 		        android:scaleType="centerCrop" />
 
 	    </RelativeLayout>
@@ -1018,7 +1018,7 @@
 		        android:adjustViewBounds="true"
 		        android:background="@drawable/plus_button"
 		        android:onClick="onClickFunc"
-		        android:tag="19"
+		        android:tag="Tatiana Clouthier"
 		        android:scaleType="centerCrop" />
 
 	    </RelativeLayout>
@@ -1067,7 +1067,7 @@
 		        android:adjustViewBounds="true"
 		        android:background="@drawable/plus_button"
 		        android:onClick="onClickFunc"
-		        android:tag="20"
+		        android:tag="Eva Trujillo Ramírez"
 		        android:scaleType="centerCrop" />
 
 	    </RelativeLayout>
@@ -1116,7 +1116,7 @@
 		        android:adjustViewBounds="true"
 		        android:background="@drawable/plus_button"
 		        android:onClick="onClickFunc"
-		        android:tag="21"
+		        android:tag="Luis Guevara Garza"
 		        android:scaleType="centerCrop" />
 
 	    </RelativeLayout>
@@ -1165,7 +1165,7 @@
 		        android:adjustViewBounds="true"
 		        android:background="@drawable/plus_button"
 		        android:onClick="onClickFunc"
-		        android:tag="22"
+		        android:tag="José Luis Rodela"
 		        android:scaleType="centerCrop" />
 
 	    </RelativeLayout>

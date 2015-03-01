@@ -97,7 +97,7 @@
         android:layout_centerInParent="true"
         android:gravity="center|top"
         android:paddingStart="6dp"
-        android:paddingTop="3dp"
+        android:paddingTop="8dp"
         android:textStyle="bold"
         android:textColor="@color/blue_letters"
         android:textSize="90sp" />
@@ -110,8 +110,8 @@
         android:layout_below="@+id/donate_title"
         android:layout_centerInParent="true"
         android:gravity="center|top"
-        android:paddingStart="8dp"
-        android:paddingTop="3dp"
+        android:paddingStart="5dp"
+        android:paddingTop="8dp"
         android:textStyle="bold"
         android:textColor="@color/blue_letters"
         android:textSize="90sp" />
@@ -124,8 +124,8 @@
         android:layout_centerInParent="true"
         android:layout_toEndOf="@+id/coutdown_days_text_tens"
         android:gravity="center|top"
-        android:paddingStart="8dp"
-        android:paddingTop="3dp"
+        android:paddingStart="6dp"
+        android:paddingTop="8dp"
         android:textColor="@color/blue_letters"
         android:textSize="90sp"
         android:textStyle="bold" />
@@ -137,8 +137,8 @@
         android:layout_alignStart="@id/count_down"
         android:layout_below="@+id/donate_title"
         android:gravity="center|top"
-        android:paddingStart="15dp"
-       	android:paddingTop="3dp"
+        android:paddingStart="18dp"
+       	android:paddingTop="8dp"
         android:textColor="@color/blue_letters"
         android:textSize="90sp"
         android:textStyle="bold" />
