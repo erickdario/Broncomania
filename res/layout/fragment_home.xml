@@ -1,16 +1,15 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical" 
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
-    
-    <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/pager"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
 
-
-	</android.support.v4.view.ViewPager>
+    <android.support.v4.view.ViewPager
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </android.support.v4.view.ViewPager>
 
     <TextView
         android:id="@+id/home_title"
@@ -24,8 +23,8 @@
         android:paddingTop="10dp"
         android:text="@string/home_title"
         android:textColor="@color/white_buttons"
-        android:textStyle="bold"
-        android:textSize="22sp" />
+        android:textSize="22sp"
+        android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/home_main_image"
@@ -35,7 +34,7 @@
         android:adjustViewBounds="true"
         android:scaleType="fitStart"
         android:src="@drawable/jaime_home" />
-    
+
     <TextView
         android:id="@+id/home_phrase"
         android:layout_width="match_parent"
@@ -52,98 +51,107 @@
         android:text="@string/home_phrase"
         android:textColor="@color/white_buttons" />
 
-    <ImageView
-        android:id="@+id/image_bus"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:id="@+id/home_icons"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_below="@+id/home_phrase"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="10dp"
-        android:adjustViewBounds="true"
-        android:maxWidth="30dp"
-        android:layout_marginEnd="30dp"
-        android:src="@drawable/bus" />
+        android:orientation="horizontal" >
 
-    <ImageView
-        android:id="@+id/image_savings"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/image_bus"
-        android:layout_toEndOf="@+id/image_bus"
-        android:adjustViewBounds="true"
-        android:maxWidth="30dp"
-        android:layout_marginEnd="30dp"
-        android:src="@drawable/savings" />
-    
-    <ImageView
-        android:id="@+id/image_portfolio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/image_bus"
-        android:layout_toEndOf="@+id/image_savings"
-        android:adjustViewBounds="true"
-        android:maxWidth="30dp"
-        android:layout_marginEnd="30dp"
-        android:src="@drawable/portfolio" />
-    
-    <ImageView
-        android:id="@+id/image_rules"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/image_bus"
-        android:layout_toEndOf="@+id/image_portfolio"
-        android:adjustViewBounds="true"
-        android:maxWidth="30dp"
-        android:layout_marginEnd="30dp"
-        android:src="@drawable/rules" />
-    
-    <ImageView
-        android:id="@+id/image_cop"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/image_bus"
-        android:layout_toEndOf="@+id/image_rules"
-        android:adjustViewBounds="true"
-        android:maxWidth="30dp"
-        android:src="@drawable/cop" />
-    
+        <ImageView
+            android:id="@+id/image_bus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_toStartOf="@+id/image_savings"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="30dp"
+            android:src="@drawable/bus" />
+
+        <ImageView
+            android:id="@+id/image_savings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/image_bus"
+            android:layout_marginEnd="30dp"
+            android:layout_toStartOf="@+id/image_portfolio"
+            android:adjustViewBounds="true"
+            android:maxWidth="30dp"
+            android:src="@drawable/savings" />
+
+        <ImageView
+            android:id="@+id/image_portfolio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/image_bus"
+            android:layout_marginEnd="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:maxWidth="30dp"
+            android:src="@drawable/portfolio" />
+
+        <ImageView
+            android:id="@+id/image_rules"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/image_bus"
+            android:layout_marginEnd="30dp"
+            android:layout_toEndOf="@+id/image_portfolio"
+            android:adjustViewBounds="true"
+            android:maxWidth="30dp"
+            android:src="@drawable/rules" />
+
+        <ImageView
+            android:id="@+id/image_cop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/image_bus"
+            android:layout_toEndOf="@+id/image_rules"
+            android:adjustViewBounds="true"
+            android:maxWidth="30dp"
+            android:src="@drawable/cop" />
+    </RelativeLayout>
+
     <TextView
         android:id="@+id/home_description_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/image_bus"
+        android:layout_below="@id/home_icons"
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:text="@string/home_description_title"
         android:textSize="20sp" />
-    
+
     <TextView
         android:id="@+id/home_description_body"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:layout_below="@id/home_description_title"
         android:layout_centerHorizontal="true"
+        android:gravity="center"
         android:text="@string/home_description_body" />
-    
-    <FrameLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_above="@+id/home_footer"
-    
-    android:layout_below="@id/home_description_body" >
 
-    <Button
-        android:id="@+id/button_donation"
-        style="@style/AppBaseTheme"
-        android:layout_width="150dp"
-        android:layout_height="35dp"
-        android:background="@drawable/green_button"
-        android:text="@string/home_join_button"
-        android:layout_gravity="center"
-        android:onClick="openBroncoWebsite"
-        android:textColor="@drawable/button_white_text" />
-    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/home_footer"
+        android:layout_below="@id/home_description_body" >
+
+        <Button
+            android:id="@+id/button_donation"
+            style="@style/AppBaseTheme"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="@drawable/green_button"
+            android:onClick="openBroncoWebsite"
+            android:text="@string/home_join_button"
+            android:textColor="@drawable/button_white_text" />
     </FrameLayout>
 
     <LinearLayout
@@ -151,14 +159,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:orientation="vertical" 
-        android:background="@color/dark_purple_event">
+        android:background="@color/dark_purple_event"
+        android:orientation="vertical" >
+
         <TextView
-        android:id="@+id/footer_filler"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="" />
+            android:id="@+id/footer_filler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="" />
     </LinearLayout>
 
 </RelativeLayout>
