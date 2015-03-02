@@ -338,4 +338,9 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
     	Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://unete.jaimerodriguez.mx/register"));
     	startActivity(browserIntent);
     }
+    
+    public void openTransparencyWebsite(View view){
+    	Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.transparenciapresupuestaria.gob.mx/es/PTP/Datos_Abiertos"));
+    	startActivity(browserIntent);
+    }
 }
